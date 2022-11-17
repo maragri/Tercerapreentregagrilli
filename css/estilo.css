@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+html body {
+  background-color: #C1244C;
+  color: #FCF8F9;
+  font-family: "Kalam", cursive;
+  font-size: 28px;
+  padding: 10rem;
+  overflow-x: hidden;
+  text-align: center;
+}
+html h1 {
+  font-family: "Dancing Script", cursive;
+  color: #9CF740;
+  font-size: 50px;
+  text-align: center;
+}
+html h2 {
+  font-family: "Dancing Script", cursive;
+  color: #9CF740;
+  font-size: 50px;
+  text-align: center;
+}
+html .section1 {
+  text-align: center;
+}
+html .form4 {
+  color: rgb(172, 48, 110);
+  justify-content: center;
+}
+html .grid {
+  display: grid;
+  grid-template-areas: "encabezado1 encabezado1 encabezado1" "galeria galeria galeria" "footer footer footer";
+}
+html button {
+  background-color: #9E91F9;
+  border-radius: 40px;
+}
+html header {
+  grid-area: encabezado1;
+  justify-content: center;
+}
+html ul {
+  list-style: none;
+}
+html aside {
+  grid-area: aside1;
+}
+html .galeria {
+  grid-area: galeria;
+}
+html footer {
+  grid-area: footer;
+}
+html .grid1 {
+  display: grid;
+  grid-template-areas: "encabezado encabezado encabezado" "section1 section1 section1" "footer footer footer";
+}
+html header {
+  grid-area: encabezado;
+}
+html section {
+  grid-area: section1;
+}
+html section {
+  grid-area: section2;
+}
+html footer {
+  grid-area: footer;
+}
+html .grid2 {
+  display: grid;
+  grid-template-areas: "encabezado encabezado encabezado" "subtitulo subtitulo subtitulo" "sectionA sectionB sectionB" "sectionC sectionD sectionD" "galeria galeria galeria" "footer footer footer";
+}
+html .encabezado {
+  grid-area: encabezado;
+}
+html .subtitulo {
+  grid-area: subtitulo;
+}
+html .sectionA {
+  grid-area: sectionA;
+}
+html .sectionB {
+  grid-area: sectionB;
+}
+html .sectionC {
+  grid-area: sectionC;
+}
+html .sectionD {
+  grid-area: sectionD;
+}
+html .galeria {
+  grid-area: galeria;
+}
+html footer {
+  grid-area: footer;
+}
+html .grid3 {
+  display: grid;
+  grid-template-areas: "encabezado3 encabezado3 encabezado3" "cursos1 cursos1 cursos1" "cursoA cursoA cursoB" "cursos2 cursos2 cursos2" "galeria galeria galeria" "footer footer footer";
+}
+html header {
+  grid-area: encabezado3;
+}
+html .cursos1 {
+  grid-area: cursos1;
+}
+html .cursoA {
+  grid-area: cursoA;
+}
+html .cursoB {
+  grid-area: cursoB;
+}
+html .cursos2 {
+  grid-area: cursos2;
+}
+html .galeria {
+  grid-area: galeria;
+}
+html footer {
+  grid-area: footer;
+}
+html .grid4 {
+  display: grid;
+  grid-template-areas: "encabezado4 encabezado4 encabezado4" "form4 form4 form4" "footer footer footer";
+}
+html .encabezado4 {
+  grid-area: encabezado4;
+}
+html .form4 {
+  grid-area: form4;
+}
+html footer {
+  grid-area: footer;
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .row {
+    display: none;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas: "encabezado encabezado" "row row" "footer footer";
+  }
+  .grid1 {
+    display: grid;
+    grid-template-areas: "encabezado encabezado" "section1 section1" "footer footer";
+  }
+  .grid2 {
+    display: grid;
+    grid-template-areas: "encabezado  encabezado" "subtitulo subtitulo" "sectionA sectionB" "sectionC sectionD" "row row" "footer footer";
+  }
+  .grid3 {
+    display: grid;
+    grid-template-areas: "encabezado3 encabezado3" "cursos1 cursos1" "cursoA cursoB" "cursos2 cursos2" "row row" "footer footer";
+  }
+  .grid4 {
+    display: grid;
+    grid-template-areas: "encabezado4 encabezado4" "form4 form4" "form4 form4" "form4 form4" "footerfooter";
+  }
+}
+@media (max-width: 699px) {
+  .form4 {
+    margin: auto;
+  }
+  .row {
+    display: none;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas: "encabezado" "row" "footer";
+  }
+  .grid1 {
+    display: grid;
+    grid-template-areas: "encabezado" "section1" "footer";
+  }
+  .grid2 {
+    display: grid;
+    grid-template-areas: "encabezado" "subtitulo" "sectionA" "sectionB" "sectionC" "sectionD" "row" "footer";
+  }
+  .grid3 {
+    display: grid;
+    grid-template-areas: "encabezado3" "cursos1" "cursoA" "cursoB" "cursos2" "row" "footer";
+  }
+  .grid4 {
+    display: grid;
+    grid-template-areas: "encabezado4" "form4" "form4" "form4" "footer";
+  }
+}
+.row {
+  height: 800px;
+  width: 1200px;
+  text-align: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=estilo.css.map */

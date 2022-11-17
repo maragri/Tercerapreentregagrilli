@@ -1,0 +1,275 @@
+html{
+    body{ 
+        background-color: $color-fondo;
+        color: $color-fuentes-secundario;
+        font-family: 'Kalam', cursive;
+        font-size: 28px;
+        padding: 10rem;
+        overflow-x: hidden;
+        text-align: center;
+    }
+   h1{
+     font-family: 'Dancing Script', cursive;
+     color: $color-fuentes1;
+     font-size: 50px;
+     text-align: center;
+   }
+   h2{
+    font-family: 'Dancing Script', cursive;
+    color: $color-fuentes1;
+    font-size: 50px;
+    text-align: center;
+  }
+   
+   .section1{
+    text-align: center;
+
+   }
+   
+   .form4{
+        color: rgb(172, 48, 110);
+        justify-content: center;
+        
+   }
+   .grid{
+    display: grid;
+    grid-template-areas: 
+    "encabezado1 encabezado1 encabezado1"
+     "galeria galeria galeria"
+     "footer footer footer";
+   }
+   button{
+    background-color: $color-botones;
+    border-radius: 40px;
+   }
+   header{
+    grid-area: encabezado1;
+    justify-content: center;
+   }
+   ul{
+    list-style: none;
+   }
+   
+   aside{
+    grid-area: aside1;
+   }
+   .galeria{
+    grid-area: galeria;
+   }
+   footer{
+    grid-area: footer;
+   }
+   .grid1{
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado encabezado"
+    "section1 section1 section1"
+    "footer footer footer" ;
+   }
+   header{
+    grid-area: encabezado;
+   }
+   section{
+    grid-area: section1;
+   }
+   section{
+    grid-area: section2;
+   }
+   footer{
+    grid-area: footer;
+   }
+   
+   .grid2{
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado encabezado"
+    "subtitulo subtitulo subtitulo"
+    "sectionA sectionB sectionB"
+    "sectionC sectionD sectionD"
+    "galeria galeria galeria"
+    "footer footer footer";
+   }
+   .encabezado{
+    grid-area: encabezado;
+   }
+   .subtitulo{
+    grid-area: subtitulo;
+   }
+  .sectionA{
+    grid-area: sectionA;
+  }
+  .sectionB{
+    grid-area: sectionB;
+  }
+  .sectionC{
+    grid-area: sectionC;
+  }
+  .sectionD{
+    grid-area: sectionD;
+  }
+  .galeria{
+    grid-area: galeria;
+  }
+  footer{
+    grid-area: footer;
+  }
+   .grid3{
+    display: grid;
+    grid-template-areas:"encabezado3 encabezado3 encabezado3""cursos1 cursos1 cursos1""cursoA cursoA cursoB""cursos2 cursos2 cursos2""galeria galeria galeria""footer footer footer" ;
+   }
+   header{
+    grid-area: encabezado3;
+   }
+   
+   .cursos1{
+    grid-area: cursos1;
+   }
+   .cursoA{
+    grid-area: cursoA;
+   }
+   .cursoB{
+    grid-area: cursoB;
+   }
+   .cursos2{
+    grid-area: cursos2;
+   }
+   .galeria{
+    grid-area: galeria;
+   }
+   footer{
+    grid-area: footer;
+   }
+.grid4{
+    display: grid;
+    grid-template-areas: "encabezado4 encabezado4 encabezado4""form4 form4 form4""footer footer footer";
+}
+.encabezado4{
+    grid-area: encabezado4;
+}
+.form4{
+    grid-area: form4;
+
+}footer{
+    grid-area: footer;
+}
+
+}
+@media (min-width:700px) and (max-width:1100px) 
+{
+    
+    .row{
+        display: none;
+    }
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "encabezado encabezado"
+        "row row"
+        "footer footer";
+
+    }
+    .grid1{
+        display: grid;
+        grid-template-areas:
+        "encabezado encabezado"
+        "section1 section1"
+        "footer footer"
+        ; 
+
+    }
+    .grid2{
+           display: grid;
+           grid-template-areas:
+         "encabezado  encabezado"
+        "subtitulo subtitulo"
+        "sectionA sectionB"
+        "sectionC sectionD"
+        "row row"
+        "footer footer" ;
+    }
+    .grid3{
+        display: grid;
+        grid-template-areas:
+        "encabezado3 encabezado3"
+        "cursos1 cursos1"
+        "cursoA cursoB"
+        "cursos2 cursos2"
+        "row row"
+        "footer footer" ;
+
+    }
+    .grid4{
+        display: grid;
+        grid-template-areas: 
+        "encabezado4 encabezado4"
+        "form4 form4"
+        "form4 form4"
+        "form4 form4"
+        "footerfooter";
+
+    }
+}
+
+        @media (max-width:699px)
+        { 
+            .form4{
+                margin: auto;
+            }
+            .row{
+            display: none;
+        }
+            .grid{
+                display: grid;
+                grid-template-areas: 
+                "encabezado"
+                "row"
+                "footer";
+        
+            }
+            .grid1{
+                display: grid;
+                grid-template-areas:
+                "encabezado"
+                "section1"
+                "footer"
+                ; 
+        
+            }
+            .grid2{
+                   display: grid;
+                   grid-template-areas:
+                 "encabezado"
+                "subtitulo"
+                "sectionA" 
+                "sectionB"
+                "sectionC"
+                 "sectionD"
+                "row"
+                "footer" ;
+            }
+            .grid3{
+                display: grid;
+                grid-template-areas:
+                "encabezado3"
+                "cursos1"
+                "cursoA"
+                 "cursoB"
+                "cursos2"
+                "row"
+                "footer" ;
+        
+            }
+            .grid4{
+                display: grid;
+                grid-template-areas: 
+                "encabezado4"
+                "form4"
+                "form4"
+                 "form4"
+                "footer";
+        
+            }
+
+        }
+           
+    
